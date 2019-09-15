@@ -1,0 +1,4 @@
+url http://127.0.0.1/login.do;jsessionid=2ps299el17dtd
+username admin
+password manager
+browser firefox

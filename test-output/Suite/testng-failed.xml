@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="chromebrowser(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.actime.reporttest.ReportTest">
+        <methods>
+          <include name="modifyreportTest"/>
+          <include name="configAM"/>
+          <include name="createreportTest"/>
+          <include name="deletereportTest"/>
+          <include name="configBT"/>
+          <include name="configBM1"/>
+        </methods>
+      </class> <!-- com.actime.reporttest.ReportTest -->
+    </classes>
+  </test> <!-- chromebrowser(failed) -->
+  <test name="chromebrowser1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.actitime.projectTest.ProjectTest">
+        <methods>
+          <include name="modifyprojectTest"/>
+          <include name="configAM"/>
+          <include name="deleteprojectTest"/>
+          <include name="configBT"/>
+          <include name="configBM1"/>
+        </methods>
+      </class> <!-- com.actitime.projectTest.ProjectTest -->
+    </classes>
+  </test> <!-- chromebrowser1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

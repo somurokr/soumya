@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="5">
+  <test name="firefoxbrowser">
+  <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.actitime.usertest.UserTest"/>
+    </classes>
+  </test> 
+   <test name="chromebrowser">
+   <parameter name="browser" value="chrome"/>
+    <classes>
+          <class name="com.actime.reporttest.ReportTest"/>
+    </classes>
+  </test>
+   <test name="chromebrowser1">
+   <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.actitime.projectTest.ProjectTest"/>
+    </classes>
+  </test>
+</suite>
